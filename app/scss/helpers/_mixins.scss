@@ -1,0 +1,215 @@
+/* Tạo chuyển động trong nav */
+
+@keyframes opacity-slowin {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes move-form-cv-in {
+  from {
+    right: 0%;
+    top: 160px;
+  }
+  to {
+    right: 100px;
+    top: 160px;
+  }
+}
+
+@keyframes placeholderinput {
+  from {
+    top: 0;
+  }
+  to {
+    top: -20px;
+    left: 0;
+  }
+}
+
+@keyframes movecloud {
+  from {
+    height: 0%;
+    opacity: 1;
+  }
+  to {
+    height: 110%;
+    opacity: 0
+  }
+}
+
+@keyframes widthtalkchat {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rotateclose {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
+
+@keyframes rotatenotclose {
+  from {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
+/* Xoay tron */
+
+@mixin move {
+  @-webkit-keyframes mymove/* Safari and Chrome */
+    {
+    from {
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+    }
+    to {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+  }
+}
+
+@mixin rotate {
+  @include move;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;
+  animation: mymove 1s linear 2s infinite;
+  /* IE 10+ */
+  -webkit-animation: mymove 2s linear 0s infinite;
+  /* Safari 4+ */
+  -moz-animation: mymove 2s linear 0s infinite;
+  /* Fx 5+ */
+  -o-animation: mymove 2s linear 0s infinite;
+  /* Opera 12+ */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+
+/* End */
+
+@mixin font-size($font-size) {
+  font-size: $font-size;
+}
+
+@mixin set-font($font-size, $color, $line-height) {
+  font-size: $font-size;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin set-flex($justify, $derection) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $derection;
+}
+
+/* Font-familr */
+
+@mixin font-face($font, $src) {
+  font-family: $font;
+  src: url($src);
+}
+
+@mixin img-gray {
+  &:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+@mixin title__detail {
+  width: 100%;
+  height: 49px;
+  @include set-flex(flex-start, row);
+  align-items: center;
+  @include set-font(16px, #3B3B3B, 19px);
+  text-transform: uppercase;
+  border-bottom: 1px solid $color_border_element_detail;
+  padding-left: 15px;
+  margin-bottom: 14px;
+  @include mobile {
+    @include set-font($font-mobile, #3B3B3B, 14px);
+    padding-left: 11px;
+  }
+}
+
+/* media queries */
+
+/* device */
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktops-min-width: 1024px;
+$desktops-max-width:1200px;
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktops-min-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktopmini {
+  @media (min-width: #{$desktops-min-width}) and (max-width: #{$desktops-max-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktops-max-width}) {
+    @content;
+  }
+}
+
+.fl-r {
+  float: right;
+}

@@ -1,0 +1,2910 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    Giao diện mẫu Big-shoe dành cho web website kinh doanh thời trang Big Shoe
+  </title>
+
+  <link rel="icon" href="favicon.png-1520213921167.png" tppabs="https://bizweb.dktcdn.net/100/091/132/themes/633981/assets/favicon.png?1520213921167"
+    type="image/x-icon" />
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href='css/ow.carousel.min.css' rel='stylesheet' />
+  <link href='css/base.scss.css' rel='stylesheet' />
+  <link href='css/style2.scss.css' rel='stylesheet' />
+  <link href='css/update.scss.css' rel='stylesheet' />
+  <link href='css/module.scss.css' rel='stylesheet' />
+  <link href='css/responsive.scss.css' rel='stylesheet' />
+  <link href='css/update_style.scss.css' rel='stylesheet' />
+  <link href='css/style.css' rel='stylesheet' />
+  <script src='js/jquery.min.js' type='text/javascript'></script>
+
+  <link href='css/menu.scss.css' rel='stylesheet' />
+</head>
+
+<body>
+  <!-- Get default informations -->
+  <!-- end !! get default informations -->
+  <!-- Main content -->
+  <header class="header">
+    <div class="topbar hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 a-left header-info">
+            <span class="hidden-sm hidden-xs">
+              Chào mừng bạn đã đến với Big Shoe !
+            </span>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 a-right">
+            <ul class="social-info">
+              <!-- defined style classes could be found in update_stylesheet.scss -->
+              <li>
+                <a href="#" class="hv-bg-twitter btn-transition" title="twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <!-- defined style classes could be found in update_stylesheet.scss -->
+              <li>
+                <a href="#" class="hv-bg-facebook btn-transition" title="facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <!-- defined style classes could be found in update_stylesheet.scss -->
+              <li>
+                <a href="#" class="hv-bg-google-plus btn-transition" title="google plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
+            <div class="logo">
+              <a title="Big Shoe" href="index.html">
+                <img class="img-responsive" src="images/logo.png" alt="logo Big Shoe">
+              </a>
+            </div>
+          </div>
+          <div class="hidden-xs hidden-sm col-md-6 col-lg-6 search_area" style="margin-top: 20px">
+            <div class="search_form">
+              <form action="#" method="get" class="search-form" role="search">
+                <input placeholder="Tìm kiếm ..." class="search_input" type="text" name="query" value="" />
+                <input type="submit" value="Tìm kiếm" class="btnsearch" />
+                <span class='arrow-left-search'></span>
+              </form>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-4 col-md-3 col-lg-3 account-cart">
+            <div class="row">
+              <div class="col-sm-7 col-md-8 col-lg-8 account">
+                <ul class="account-info">
+                  <li>
+                    <a href="#">Đăng nhập</a>
+                  </li>
+                  <li>
+                    <a href="#">Đăng ký</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 col-md-4 col-lg-4 cart-header">
+                <div class="top-cart-contain">
+                  <div class="mini-cart text-xs-center">
+                    <div class="heading-cart">
+                      <a href="cart.html">
+                        <span class="cartCount count_item_pr" id="cart-total">0</span>
+                        <span class="cart-text">Giỏ hàng</span>
+                      </a>
+                    </div>
+                    <div class="top-cart-content">
+                      <ul id="cart-sidebar" class="mini-products-list count_li">
+                        <li class="list-item">
+                          <ul></ul>
+                        </li>
+                        <li class="action">
+                          <ul>
+                            <li class="li-fix-1">
+                              <div class="top-subtotal">
+                                Tổng tiền thanh toán:
+                                <span class="price"></span>
+                              </div>
+                            </li>
+                            <li class="li-fix-2" style="">
+                              <div class="actions">
+                                <a href="cart.html" class="btn btn-primary">
+                                  <span>Giỏ hàng</span>
+                                </a>
+                                <a href="cart.html" class="btn btn-checkout btn-gray">
+                                  <span>Thanh toán</span>
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-header menu-nav hidden-sm hidden-xs">
+      <nav>
+        <ul id="nav" class="nav container">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" title="Trang chủ">
+              <i class="fa fa-home"></i> Trang chủ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gioi-thieu.html" title="Về chúng tôi">
+              Về chúng tôi
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="all.html" class="nav-link" title="Sản phẩm">
+              Sản phẩm
+              <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="san-pham-moi-ve.html" title="Bộ sưu tập mới">
+                  Bộ sưu tập mới
+                </a>
+              </li>
+              <li class="dropdown-submenu nav-item-lv2">
+                <a class="nav-link" href="#" title="Giày thời trang nam">
+                  Giày thời trang nam
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" title="Giày da">
+                      Giày da
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày vải">
+                      Giày vải
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày Converse">
+                      Giày Converse
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày Vans">
+                      Giày Vans
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày Lacoste">
+                      Giày Lacoste
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày D&G">
+                      Giày D&G
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="Giày Bata">
+                      Giày Bata
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="#" title="Giày mùa hè">
+                  Giày mùa hè
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tin-tuc.html" class="nav-link" title="Tin tức">
+              Tin tức
+              <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="#" title="Tin tức khuyến mãi">
+                  Tin tức khuyến mãi
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lien-he.htm" tppabs="https://big-shoe.bizwebvietnam.net/lien-he" title="Liên hệ">
+              Liên hệ
+            </a>
+          </li>
+          <li class="menu_hotline">
+            <img class="img-responsive" src="images/hotline_pc.png" alt="Hotline" />
+            <a href="tel:19006750">
+              Hotline:
+              <span>1900 6750</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-mobile menu-nav hidden-md hidden-lg">
+      <div class="sidebar-menu sidebar_menu site-nav-mobile">
+        <div class="sidebar-menu-title module-header">
+          <div class="module-title">
+            <i class="fa fa-bars"></i>
+          </div>
+          <a class="mobile-cart hidden-sm" href="cart.htm" tppabs="https://big-shoe.bizwebvietnam.net/cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="cart-count-mobile">0</span>
+          </a>
+        </div>
+        <div class="sidebar-menu-content">
+          <div class="sidebar-linklists mobile-menu-linklists">
+            <ul>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu active">
+                <a class="ajaxLayer" href="index.htm" tppabs="https://big-shoe.bizwebvietnam.net/" title="Trang chủ">
+                  <span>Trang chủ</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="gioi-thieu.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-thieu" title="Về chúng tôi">
+                  <span>Về chúng tôi</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="all.htm" tppabs="https://big-shoe.bizwebvietnam.net/collections/all" title="Sản phẩm">
+                  <span>Sản phẩm</span>
+                </a>
+                <ul style="display: none" class="lv2">
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="san-pham-moi-ve.htm" tppabs="https://big-shoe.bizwebvietnam.net/san-pham-moi-ve" title="Bộ sưu tập mới">
+                      <span>Bộ sưu tập mới</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="giay-thoi-trang-nam.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-thoi-trang-nam"
+                      title="Giày thời trang nam">
+                      <span>Giày thời trang nam</span>
+                    </a>
+                    <ul style="display: none;" class="lv3">
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-da.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-da" title="Giày da">
+                          <span>Giày da</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-vai.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-vai" title="Giày vải">
+                          <span>Giày vải</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-converse.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-converse" title="Giày Converse">
+                          <span>Giày Converse</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-vans.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-vans" title="Giày Vans">
+                          <span>Giày Vans</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-lacoste.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-lacoste" title="Giày Lacoste">
+                          <span>Giày Lacoste</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-d-g.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-d-g" title="Giày D&G">
+                          <span>Giày D&G</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-bata.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-bata" title="Giày Bata">
+                          <span>Giày Bata</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="giay-thoi-trang-nu.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-thoi-trang-nu" title="Giày thời trang nữ">
+                      <span>Giày thời trang nữ</span>
+                    </a>
+                    <ul style="display: none;" class="lv3">
+                      <li>
+                        <a class="ajaxLayer a_lv3" href="giay-converse.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-converse" title="Giày Converse">
+                          <span>Giày Converse</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày mùa hè">
+                      <span>Giày mùa hè</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày công sở">
+                      <span>Giày công sở</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày thể thao">
+                      <span>Giày thể thao</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày đi chơi">
+                      <span>Giày đi chơi</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày trẻ em">
+                      <span>Giày trẻ em</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Giày">
+                      <span>Giày</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="tin-tuc.html" title="Tin tức">
+                  <span>Tin tức</span>
+                </a>
+                <ul style="display: none" class="lv2">
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Tin tức khuyến mãi">
+                      <span>Tin tức khuyến mãi</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="ajaxLayer a_lv2" href="#" title="Tin tức giày">
+                      <span>Tin tức giày</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="lien-he.htm" tppabs="https://big-shoe.bizwebvietnam.net/lien-he" title="Liên hệ">
+                  <span>Liên hệ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="full-width">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="search_form">
+                <form action="https://big-shoe.bizwebvietnam.net/search" method="get" class="search-form" role="search">
+                  <input placeholder="Tìm kiếm ..." class="search_input" type="text" name="query" value="" />
+                  <button type="submit" class="btnsearch">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="hotline_mobile">
+                <a href="tel:19006750">
+                  <img src="images/hotline_mobile.png" alt="Hotline" class="img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <h1 class="hidden">Big Shoe - Với phong cách thiết kế trẻ trung, gam màu tươi sáng, Giao diện Big-shoe là sự lựa chọn tuyệt vời cho các website
+    kinh doanh thời trang, phụ kiện
+  </h1>
+
+  <section class="section_main" style="margin-top: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="main_content col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-3 col-lg-push-3  col-md-pull-3 col-lg-pull-3">
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+              <div class="module-header">
+                <h2 class="module-title style-2">
+                  <a href="san-pham-noi-bat.htm" tppabs="https://big-shoe.bizwebvietnam.net/san-pham-noi-bat" title="Sản phẩm mới">
+                    <span>Sản phẩm mới</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme top-right nav-style-2" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="2"
+                  data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large_banner banner">
+            <div class="module-content">
+              <a href="#" title="">
+                <img class="img-responsive" src="images/large_banner_1.png" alt="big-shoe">
+              </a>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+              <div class="module-header">
+                <h2 class="module-title style-2">
+                  <a href="#" title="Sản phẩm khuyến mãi">
+                    <span>Sản phẩm khuyến mãi</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme top-right nav-style-2" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="2"
+                  data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="giay-da-converse-cao-cap.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/1-min-1.jpg-v=1468203233277.jpg" alt="Giày da Converse cao cấp" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-da-converse-cao-cap.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-da-converse-cao-cap*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ADD DIV -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large_banner banner">
+            <div class="module-content">
+              <a href="#" title="">
+                <img class="img-responsive" src="images/large_banner_1.png" alt="big-shoe">
+              </a>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+              <div class="module-header">
+                <h2 class="module-title style-2">
+                  <a href="#" title="Sản phẩm nổi bật">
+                    <span>Sản phẩm nổi bật</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme top-right nav-style-2" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="2"
+                  data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/5-min-a34571b3-bd89-418a-99f3-09cac3f32a04.jpg-v=1468200190343.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/19-min-63537b64-b819-4ca2-8ac2-7111f68ca7a2-3.jpg-v=1468203514247.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-33%</div>
+                        <a href="#" title="Giày thể thao Converse 4">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/4-min-b44f4156-7226-4759-a2a2-545531ef7c8d.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/5-min-c802784a-1909-4b6f-8736-23c29995b428.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-the-thao-converse-4.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" data-handle="giay-the-thao-converse-4" class="btn btn-white btn_view quick-view margin-left-2"
+                              title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" title="Giày thể thao Converse 4">
+                            Giày thể thao converse 4
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">600.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              900.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/5-min-a34571b3-bd89-418a-99f3-09cac3f32a04.jpg-v=1468200190343.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/19-min-63537b64-b819-4ca2-8ac2-7111f68ca7a2-3.jpg-v=1468203514247.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-33%</div>
+                        <a href="#" title="Giày thể thao Converse 4">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/4-min-b44f4156-7226-4759-a2a2-545531ef7c8d.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/5-min-c802784a-1909-4b6f-8736-23c29995b428.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-the-thao-converse-4.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" data-handle="giay-the-thao-converse-4" class="btn btn-white btn_view quick-view margin-left-2"
+                              title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" title="Giày thể thao Converse 4">
+                            Giày thể thao converse 4
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">600.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              900.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/5-min-a34571b3-bd89-418a-99f3-09cac3f32a04.jpg-v=1468200190343.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/19-min-63537b64-b819-4ca2-8ac2-7111f68ca7a2-3.jpg-v=1468203514247.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-33%</div>
+                        <a href="#" title="Giày thể thao Converse 4">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/4-min-b44f4156-7226-4759-a2a2-545531ef7c8d.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/5-min-c802784a-1909-4b6f-8736-23c29995b428.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-the-thao-converse-4.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="giay-the-thao-converse-4.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" data-handle="giay-the-thao-converse-4"
+                              class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="giay-the-thao-converse-4.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" title="Giày thể thao Converse 4">
+                            Giày thể thao converse 4
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">600.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              900.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-14%</div>
+                        <a href="#" title="Giày da Converse cao cấp">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/5-min-a34571b3-bd89-418a-99f3-09cac3f32a04.jpg-v=1468200190343.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/19-min-63537b64-b819-4ca2-8ac2-7111f68ca7a2-3.jpg-v=1468203514247.jpg" alt="Giày da Converse cao cấp"
+                              />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="#" data-handle="giay-da-converse-cao-cap" class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" title="Giày da Converse cao cấp">
+                            Giày da converse cao cấp
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">1.200.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              1.400.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-box product-grid-item">
+                      <div class="product-thumbnail">
+                        <div class="sale-flash">-33%</div>
+                        <a href="giay-the-thao-converse-4.htm" title="Giày thể thao Converse 4">
+                          <div class="face-in">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/4-min-b44f4156-7226-4759-a2a2-545531ef7c8d.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                          <div class="face-out">
+                            <picture class="dp-flex">
+                              <img class="img-responsive" src="images/12-min-0ea01181-833e-44a2-b159-e74819794d38.jpg-v=1468200467677.jpg" tppabs="https://bizweb.dktcdn.net/100/091/132/products/5-min-c802784a-1909-4b6f-8736-23c29995b428.jpg?v=1468202743280"
+                                alt="Giày thể thao Converse 4" />
+                            </picture>
+                          </div>
+                        </a>
+                        <div class="product-action-btn product-action">
+                          <div class="variants form-nut-grid flex-start-center">
+                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro" title="Chọn sản phẩm" type="button" onclick="window.location.href='giay-the-thao-converse-4.htm'/*tpa=https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4*/">
+                              <span>
+                                <i class="fa fa-cog"></i> Chi tiết</span>
+                            </button>
+                            <a href="giay-the-thao-converse-4.htm" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" data-handle="giay-the-thao-converse-4"
+                              class="btn btn-white btn_view quick-view margin-left-2" title="Xem nhanh nhanh sản phẩm">
+                              <i class="fa fa-search-plus"></i> Xem nhanh
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <h3 class="product-name text2line">
+                          <a href="#" tppabs="https://big-shoe.bizwebvietnam.net/giay-the-thao-converse-4" title="Giày thể thao Converse 4">
+                            Giày thể thao converse 4
+                          </a>
+                        </h3>
+                        <div class="price-box price-loop-style">
+                          <span class="special-price">
+                            <span class="price">600.000₫</span>
+                          </span>
+                          <span class="old-price">
+                            <span class="price">
+                              900.000₫
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ADD DIV -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="sidebar left-content col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-pull-6 col-lg-pull-6">
+          <div class="aside-item sidebar_menu">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <a href="">
+                  <i class="fa fa-bars"></i>
+                  <span>Danh mục sản phẩm</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <ul class="menu-list">
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Bộ sưu tập mới">
+                    <span>Bộ sưu tập mới</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày thời trang nam">
+                    <span>Giày thời trang nam</span>
+                  </a>
+                  <i class="fa fa-caret-right"></i>
+                  <ul class="sub-menu-list">
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày da">
+                        <span>Giày da</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày vải">
+                        <span>Giày vải</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày Converse">
+                        <span>Giày Converse</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày Vans">
+                        <span>Giày Vans</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày Lacoste">
+                        <span>Giày Lacoste</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày D&G">
+                        <span>Giày D&G</span>
+                      </a>
+                    </li>
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày Bata">
+                        <span>Giày Bata</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày thời trang nữ">
+                    <span>Giày thời trang nữ</span>
+                  </a>
+                  <i class="fa fa-caret-right"></i>
+                  <ul class="sub-menu-list">
+                    <li class="sub-menu-item lv2 ">
+                      <a class="" href="#" title="Giày Converse">
+                        <span>Giày Converse</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày mùa hè">
+                    <span>Giày mùa hè</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày công sở">
+                    <span>Giày công sở</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày thể thao">
+                    <span>Giày thể thao</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày đi chơi">
+                    <span>Giày đi chơi</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày trẻ em">
+                    <span>Giày trẻ em</span>
+                  </a>
+                </li>
+                <li class="menu-item lv1 ">
+                  <a class="" href="#" title="Giày">
+                    <span>Giày</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside-item sidebar_support mobile-none">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <span>Hộ trợ trực tuyến</span>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-skype color-red font-18"></i>
+                    &nbsp; Hỗ trợ trực tuyên 1
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-skype color-red font-18"></i>
+                    &nbsp; Hỗ trợ trực tuyến 2
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-skype color-red font-18"></i>
+                    &nbsp; Hỗ trợ trực tuyến 3
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="aside-item sidebar_feature_products mobile-noneFĐư">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <a href="#" title="Sản phẩm nổi bật">
+                  <span>Sản phẩm nổi bật</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme top-right nav-style-1" data-lg-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1"
+                data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                <div class="item">
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="item">
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- ADD DIV -->
+              </div>
+            </div>
+          </div>
+          <div class="aside-item sidebar_banner banner hidden-sm hidden-xs">
+            <div class="module-content">
+              <a href="#" title="">
+                <img class="img-responsive" src="images/large_banner_1.png" alt="big-shoe">
+              </a>
+            </div>
+          </div>
+          <div class="aside-item sidebar_news">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <a href="#" title="Tin tức">
+                  <span>Tin tức</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme top-right nav-style-1" data-lg-items="1" data-md-items="1" data-sm-items="2" data-xs-items="2"
+                data-xxs-items="1" data-nav="true">
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                      <picture>
+                        <img class="img-responsive" src="images/anh1.png-v=1466157534932.png" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                        <span>Chọn giày thể thao cho bạn gái nữ tính</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 28/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa
+                        dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể th...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                      <picture>
+                        <img class="img-responsive" src="images/anh1.png-v=1466157534932.png" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                        <span>Chọn giày thể thao cho bạn gái nữ tính</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 28/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa
+                        dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể th...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                      <picture>
+                        <img class="img-responsive" src="images/anh1.png-v=1466157534932.png" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                        <span>Chọn giày thể thao cho bạn gái nữ tính</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 28/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa
+                        dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể th...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="#" title="Chọn giày thể thao cho bạn gái nữ tính">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside class="sidebar left-content col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-pull-0 col-lg-pull-0 mobile-none">
+
+          <div class="aside-item sidebar_support ">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <span>Đặt hàng trực tuyến</span>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-phone-square color-red font-18"></i>
+                    &nbsp; Tư vấn bán hàng 1
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-phone-square color-red font-18"></i>
+                    &nbsp; Tư vấn bán hàng 1
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_desc">
+                  <div class="item_title flex-start-center">
+                    <i class="fa fa-phone-square color-red font-18"></i>
+                    &nbsp; Tư vấn bán hàng 1
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      &nbsp;(04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="aside-item sidebar_feature_products">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <a href="#" title="Sản phẩm nổi bật">
+                  <span>Sản phẩm nổi bật</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme top-right nav-style-1" data-lg-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1"
+                data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                <div class="item">
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="item">
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-box product-list-item item-small">
+                    <div class="product-thumbnail">
+                      <a href="#" title="Giày da Converse cao cấp">
+                        <img class="img-responsive" src="images/15-min-f93d1b0d-711f-4c4b-b6e8-7de18c53f671.jpg-v=1468203346717.jpg" alt="giay-da-converse-cao-cap">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-name text2line">
+                        <a href="giay-da-converse-cao-cap.htm" title="Giày da Converse cao cấp">
+                          Giày da converse cao cấp
+                        </a>
+                      </h3>
+                      <div class="product-summary text2line">
+                        - Mắt xỏ dây âm với dây cột nylon - Lót trong bằng da thoáng khí tự nhiên - Đệm lót giày bằng da bọc thoải mái và hỗ trợ
+                        chân
+                      </div>
+                      <div class="price-box price-loop-style">
+                        <span class="special-price">
+                          <span class="price">1.200.000₫</span>
+                        </span>
+                        <span class="old-price">
+                          <span class="price">
+                            1.400.000₫
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- ADD DIV -->
+              </div>
+            </div>
+          </div>
+          <div class="aside-item sidebar_banner banner hidden-sm hidden-xs">
+            <div class="module-content">
+              <a href="#" title="">
+                <img class="img-responsive" src="images/blog_sidebar_banner_image.png-1520213921167.png" alt="big-shoe">
+              </a>
+            </div>
+          </div>
+          <div class="aside-item sidebar_news">
+            <div class="module-header">
+              <h2 class="module-title style-1">
+                <a href="tin-tuc.htm" tppabs="https://big-shoe.bizwebvietnam.net/tin-tuc" title="Tin tức">
+                  <span>Tin tức</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme top-right nav-style-1" data-lg-items="1" data-md-items="1" data-sm-items="2" data-xs-items="2"
+                data-xxs-items="1" data-nav="true">
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh.htm" tppabs="https://big-shoe.bizwebvietnam.net/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"
+                      title="Chọn giày thể thao cho bạn gái nữ tính">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"
+                        />
+                        <img class="img-responsive" src="anh2.png-v=1466158653610.png" tppabs="https://bizweb.dktcdn.net/100/091/132/articles/anh2.png?v=1466158653610"
+                          alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh.htm" tppabs="https://big-shoe.bizwebvietnam.net/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"
+                        title="Chọn giày thể thao cho bạn gái nữ tính">
+                        <span>Chọn giày thể thao cho bạn gái nữ tính</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 28/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa
+                        dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể th...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh.htm" tppabs="https://big-shoe.bizwebvietnam.net/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"
+                          title="Chọn giày thể thao cho bạn gái nữ tính">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii"
+                      title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"
+                        />
+                        <img class="img-responsive" src="anh1.png-v=1466157783620.png" tppabs="https://bizweb.dktcdn.net/100/091/132/articles/anh1.png?v=1466157783620"
+                          alt="gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii"
+                        title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                        <span>Giới trẻ sốt rần rần với giày Converse Chuck II</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 27/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Chuck II, "hậu duệ" của mẫu giày Chuck Taylor 98 năm tuổi đình đám đang là từ khóa "hot" nhất trong từ điển của các bạn trẻ
+                        Việt mê giày những ngày qua. 28/7 vừa qua, thương hiệu Converse đã chính...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii"
+                          title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="article-thumbnail">
+                    <a href="bi-kip-phan-biet-giay-converse-that-hay-gia.htm" tppabs="https://big-shoe.bizwebvietnam.net/bi-kip-phan-biet-giay-converse-that-hay-gia"
+                      title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"
+                        />
+                        <img class="img-responsive" src="anh3.png-v=1466157559277.png" tppabs="https://bizweb.dktcdn.net/100/091/132/articles/anh3.png?v=1466157559277"
+                          alt="bi-kip-phan-biet-giay-converse-that-hay-gia">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="article-info">
+                    <h3 class="article-name">
+                      <a href="bi-kip-phan-biet-giay-converse-that-hay-gia.htm" tppabs="https://big-shoe.bizwebvietnam.net/bi-kip-phan-biet-giay-converse-that-hay-gia"
+                        title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                        <span>'Bí kíp' phân biệt giày Converse thật hay giả</span>
+                      </a>
+                    </h3>
+                    <p class="article-detail">
+                      <span>
+                        <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                      </span>
+                      <span>
+                        <i class="fa fa-calendar"></i> 24/05/2016
+                      </span>
+                    </p>
+                    <div class="article-summary">
+                      <div class="article-summary-or-content text3line">
+                        Giày Converse thật thường có giá khá cao, xứng tầm với thương hiệu và chất lượng của nó. Hiện nay trên thị trường giày, một
+                        đôi Converse hàng hiệu chính hãng thường có giá dao động từ 500.000 đến ...
+                      </div>
+                      <p class="margin-0">
+                        <a class="text-danger" href="bi-kip-phan-biet-giay-converse-that-hay-gia.htm" tppabs="https://big-shoe.bizwebvietnam.net/bi-kip-phan-biet-giay-converse-that-hay-gia"
+                          title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                          [Đọc tiếp...]
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="top-footer">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 fot_col">
+            <div class="footer-widget">
+              <h4 class="foo-title">
+                <span>Thông tin công ty</span>
+              </h4>
+              <div class="foo-content">
+                <ul class="list-menu">
+                  <li>
+                    <a href="index.htm" tppabs="https://big-shoe.bizwebvietnam.net/" title="Trang chủ">
+                      Trang chủ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gioi-thieu.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-thieu" title="Về chúng tôi">
+                      Về chúng tôi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="all.htm" tppabs="https://big-shoe.bizwebvietnam.net/collections/all" title="Sản phẩm">
+                      Sản phẩm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tin-tuc.htm" tppabs="https://big-shoe.bizwebvietnam.net/tin-tuc" title="Tin tức">
+                      Tin tức
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lien-he.htm" tppabs="https://big-shoe.bizwebvietnam.net/lien-he" title="Liên hệ">
+                      Liên hệ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 fot_col">
+            <div class="footer-widget">
+              <h4 class="foo-title">
+                <span>Điều khoản</span>
+              </h4>
+              <div class="foo-content">
+                <ul class="list-menu">
+                  <li>
+                    <a href="index.htm" tppabs="https://big-shoe.bizwebvietnam.net/" title="Trang chủ">
+                      Trang chủ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gioi-thieu.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-thieu" title="Về chúng tôi">
+                      Về chúng tôi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="all.htm" tppabs="https://big-shoe.bizwebvietnam.net/collections/all" title="Sản phẩm">
+                      Sản phẩm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tin-tuc.htm" tppabs="https://big-shoe.bizwebvietnam.net/tin-tuc" title="Tin tức">
+                      Tin tức
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lien-he.htm" tppabs="https://big-shoe.bizwebvietnam.net/lien-he" title="Liên hệ">
+                      Liên hệ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 fot_col">
+            <div class="footer-widget">
+              <h4 class="foo-title">
+                <span>Hướng dẫn</span>
+              </h4>
+              <div class="foo-content">
+                <ul class="list-menu">
+                  <li>
+                    <a href="index.htm" tppabs="https://big-shoe.bizwebvietnam.net/" title="Trang chủ">
+                      Trang chủ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gioi-thieu.htm" tppabs="https://big-shoe.bizwebvietnam.net/gioi-thieu" title="Về chúng tôi">
+                      Về chúng tôi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="all.htm" tppabs="https://big-shoe.bizwebvietnam.net/collections/all" title="Sản phẩm">
+                      Sản phẩm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tin-tuc.htm" tppabs="https://big-shoe.bizwebvietnam.net/tin-tuc" title="Tin tức">
+                      Tin tức
+                    </a>
+                  </li>
+                  <li>
+                    <a href="lien-he.htm" tppabs="https://big-shoe.bizwebvietnam.net/lien-he" title="Liên hệ">
+                      Liên hệ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 fot_col fanpage">
+            <div class="fb-page" data-href="javascript:if(confirm(%27https://www.facebook.com/congtyDKT  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.facebook.com/congtyDKT%27"
+              tppabs="https://www.facebook.com/congtyDKT" data-tabs="timeline" data-height="200" data-small-header="true" data-adapt-container-width="true"
+              data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/congtyDKT" class="fb-xfbml-parse-ignore">
+                <a href="javascript:if(confirm(%27https://www.facebook.com/congtyDKT  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.facebook.com/congtyDKT%27"
+                  tppabs="https://www.facebook.com/congtyDKT">Facebook</a>
+              </blockquote>
+            </div>
+            <script>
+              if (navigator.userAgent.indexOf("Speed Insights") == -1) {
+                (function (d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "sdk.js#xfbml=1&version=v2.6" /*tpa=https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6*/;
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mid-footer">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 payment_methods">
+            <h4 class="foo-title">
+              <span>Hỗ trợ thanh toán</span>
+            </h4>
+            <div class="foo-content">
+              <ul class="list-menu">
+                <li class="payment_method">
+                  <img src="images/payment_1_image.png" alt="master-card" title="Master Card" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_2_image.png" alt="visa" title="Visa" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_3_image.png" alt="tien-mat" title="Tiền mặt" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_4_image.png" alt="chuyen-khoan" title="Chuyển khoản" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_5_image.png" alt="atm-noi-dia" title="ATM nội địa" class="img-responsive" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 customer_care">
+            <h4 class="foo-title">
+              <span>Giải đáp thắc mắc</span>
+            </h4>
+            <div class="foo-content">
+              <div class="care_image">
+                <img src="images/customer_care_image.png" alt="Giải đáp thắc mắc" class="img-responsive" />
+              </div>
+              <ul class="list-menu">
+                <li class="care_info">
+                  <p class="care-title">
+                    Tư vấn miễn phí (24/7)
+                  </p>
+                  <p class="care-phone">
+                    <a href="tel:01212111212" title="Gọi tới: 01212111212">
+                      01212111212
+                    </a>
+                  </p>
+                </li>
+                <li class="care_info">
+                  <p class="care-title">
+                    Góp ý, phản ánh (8h00 - 20h00)
+                  </p>
+                  <p class="care-phone">
+                    <a href="tel:01212111212" title="Gọi tới: 01212111212">
+                      01212111212
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="bottom-footer">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 class="foo-title">
+              <span>Công ty cổ phần công nghệ DKT</span>
+            </h4>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info_col">
+                <p class="store-address">
+                  Trụ sở chính: Tầng 20 - Tòa nhà Hapulico - Vũ Trọng Phụng - Thanh Xuân - Hà Nội
+                </p>
+                <p class="store-phone">
+                  <span>
+                    Điện thoại :
+                  </span>
+                  <span>
+                    <a href="tel:0466742332">(04) 6674 2332</a>
+                    <a href="tel:0437868904"> - (04) 3786 8904</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <span>© Bản quyền thuộc về Team AE</span>
+            <span class="hidden-xs"> | </span>
+            <span>Cung cấp bởi
+              <a href="#s" rel="nofollow" target="_blank">Hapulico</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-circle-up"></i>
+    </div>
+  </footer>
+  <!-- Bizweb javascript -->
+  <script src="js/option-selector.js" type='text/javascript'></script>
+  <script src="js/api.jquery.js" type='text/javascript'></script>
+  <!-- Plugin JS -->
+  <script tppabs="https://bizweb.dktcdn.net/100/091/132/themes/633981/assets/jquery.appear.js?1520213921167" type='text/javascript'></script>
+  <script src="js/ow.carousel.min.js" type='text/javascript'></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- 
+  <div class="addcart-popup product-popup awe-popup">
+    <div class="overlay no-background"></div>
+    <div class="content">
+      <div class="row row-noGutter">
+        <div class="col-xl-6 col-xs-12">
+          <div class="btn btn-full btn-primary a-left popup-title">
+            <i class="fa fa-check"></i>Thêm vào giỏ hàng thành công
+          </div>
+          <a href="javascript:void(0)" class="close-window close-popup">
+            <i class="fa fa-close"></i>
+          </a>
+          <div class="info clearfix">
+            <div class="product-image margin-top-5">
+              <img alt="popup" src="images/anh1.png-v=1466157783620.png" style="max-width:150px; height:auto" />
+            </div>
+            <div class="product-info">
+              <p class="product-name"></p>
+              <p class="quantity color-main">
+                <span>Số lượng: </span>
+              </p>
+              <p class="total-money color-main">
+                <span>Tổng tiền: </span>
+              </p>
+            </div>
+            <div class="actions">
+              <button class="btn  btn-primary  margin-top-5 btn-continue">Tiếp tục mua hàng</button>
+              <button class="btn btn-gray margin-top-5" onclick="window.location='cart.htm'/*tpa=https://big-shoe.bizwebvietnam.net/cart*/">Kiểm tra giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="error-popup awe-popup">
+    <div class="overlay no-background"></div>
+    <div class="popup-inner content">
+      <div class="error-message"></div>
+    </div>
+  </div> -->
+  <!-- Add to cart -->
+
+  <!-- <div id="popup-cart" class="modal fade" role="dialog">
+    <div id="popup-cart-desktop" class="clearfix">
+      <div class="title-popup-cart">
+        <i class="fa fa-check" aria-hidden="true"></i> Sản phẩm đã được thêm vào giỏ hàng
+      </div>
+      <div class="title-quantity-popup" onclick="window.location.href='cart.htm'/*tpa=https://big-shoe.bizwebvietnam.net/cart*/;">
+        Giỏ hàng của bạn (
+        <span class="cart-popup-count"></span> sản phẩm)
+      </div>
+      <div class="content-popup-cart">
+        <div class="thead-popup">
+          <div style="width: 180px;" class="text-center">Ảnh sản phẩm</div>
+          <div style="width: 310px;" class="text-left">Tên sản phẩm</div>
+          <div style="width: 140px;" class="text-center">Đơn giá</div>
+          <div style="width: 100px;" class="text-center">Số lượng</div>
+          <div style="width: 130px;" class="text-center">Thành tiền</div>
+          <div style="width:  70px;" class="text-center">Xoá</div>
+        </div>
+        <div class="tbody-popup">
+        </div>
+        <div class="tfoot-popup">
+          <div class="tfoot-popup-1 clearfix">
+            <div class="pull-left popup-ship">
+              <p>
+                <a href="cart.htm" tppabs="https://big-shoe.bizwebvietnam.net/cart" title="Tới giỏ hàng">Tới giỏ hàng
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </p>
+            </div>
+            <div class="pull-right popup-total">
+              <p>
+                <span>Tổng thanh toán</span>
+                <span class="total-price"></span>
+              </p>
+            </div>
+          </div>
+          <div class="tfoot-popup-2 clearfix">
+            <a class="button btn btn-style btn-transition btn-proceed-checkout" title="Tiến hành thanh toán" href="cart.htm" tppabs="https://big-shoe.bizwebvietnam.net/checkout">
+              <span>Tiến hành thanh toán</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a title="Close" class="quickview-close close-window" href="javascript:;" onclick="$('#popup-cart').modal('hide');">
+        <i class="fa  fa-close"></i>
+      </a>
+    </div>
+  </div> -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="quickview-modal">
+            <div class="block-quickview primary_block row">
+              <div class="product-left-column col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div class="clearfix image-block">
+                  <span class="view_full_size">
+                    <a class="img-product dp-flex" title="" href="#">
+                      <img id="product-featured-image-quickview" class="img-responsive product-featured-image-quickview" src="images/blog_sidebar_banner_image.png-1520213921167.png"
+                        alt="quickview" />
+                    </a>
+                  </span>
+                  <div class="loading-imgquickview"></div>
+                </div>
+                <div class="more-view-wrapper clearfix">
+                  <div id="thumbs_list_quickview">
+                    <ul class="product-photo-thumbs quickview-more-views-owlslider" id="thumblist_quickview"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product-center-column product-info product-item col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <h3>
+                  <a class="qwp-name" href="">&nbsp;Giày convert cao cấp</a>
+                </h3>
+                <p class="product_vendor_type">
+                  <span class="brand">
+                    Thương hiệu: (
+                    <em>Converse</em>)
+                  </span>
+                  <span class="type">
+                    Loại: (
+                    <em>Đang cập nhật ...</em>)
+                  </span>
+                </p>
+                <div class="quickview-info">
+                  <span class="prices price-box">
+                    <span class="price special-price">450.000₫</span>
+                    <del class="old-price">550.000₫</del>
+                  </span>
+                </div>
+                <label class="full-width">Mô tả: </label>
+                <div class="product-description ">
+                  <p>- Mắt xỏ dây âm với dây cột nylon </p>
+                </div>
+                <form action="/cart/add" method="post" enctype="multipart/form-data" class="variants form-ajaxtocart" id="product-actions-2809857">
+                  <div class="clearfix"></div>
+                  <div class="full-width">
+                    <div class="quantity_wanted_p flex-start-center margin-bottom-20">
+                      <label class="quantity-selector">Số lượng &nbsp;</label>
+                      <div class="flex-start-center">
+                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1) result.value--;return false;"
+                          class="reduced count" type="button">
+                          <i class="fa fa-minus"></i>
+                        </button>
+                        <input type="text" class="input-text qty" title="Số lượng" style="margin: 0 10px 0 10px" value="1" maxlength="3" id="qty"
+                          name="quantity" onkeyup="valid(this,'numbers')" onblur="valid(this,'numbers')">
+                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;"
+                          class="increase count" type="button">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button type="submit" name="add" class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart add_to_cart_detail ajax_addtocart">
+                      <span>Thêm vào giỏ hàng</span>
+                    </button>
+                  </div>
+                  <div class="total-price" style="display:none">0₫</div>
+                  <input type="hidden" name="id" value="2809857">
+                </form>
+              </div>
+
+              <a title="Close" class="quickview-close close-window" data-dismiss="modal" href="javascript:;">
+                <i class="fa fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick view -->
+  <script>
+    function valid(o, w) {
+      o.value = o.value.replace(valid.r[w], '');
+      var qtyCount = document.getElementById('qty').value;
+      if (qtyCount == 0) {
+        document.getElementById("qty").value = 1;
+      }
+    }
+    valid.r = {
+      'numbers': /[^\d]/g
+    }
+  </script>
+  <script src='js/quickview.js' type='text/javascript'></script>
+  <link href='css/quickview.scss.css' rel='stylesheet' type='text/css' />
+  <!-- Main JS -->
+  <script src='js/main.js' type='text/javascript'></script>
+  <script src='js/update_scripts.js' type='text/javascript'></script>
+</body>
+
+</html>

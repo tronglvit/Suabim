@@ -1,0 +1,26 @@
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-start-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.color-red{
+    color:red;
+}
+.font-18{
+    font-size: 18px !important;
+}
+.margin-left-2{
+    margin-left: 2px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.mobile-none{
+    @include mobile{
+        display: none;
+    }
+}

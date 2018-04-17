@@ -1,0 +1,32 @@
+.content {
+	&__job {
+		&__title {
+			@include set-flex(center, row);
+			align-items: center;
+			margin-top: 80px;
+			@include mobile {
+				margin-top: 20px;
+			}
+			p {
+				@include set-font(24px, #454545, normal);
+				text-transform: uppercase;
+				@include mobile {
+					@include set-font(18px, #454545, normal);
+				}
+			}
+		}
+	}
+	&__about {
+		margin-top: 70px;
+		margin-bottom: 150px;
+		&__company__product {
+			margin-top: 45px;
+			text-align: center;
+			margin-bottom: 20px;
+			.content__about__company__product__title {
+				margin-bottom: 60px;
+				font-size: 24px;
+			}
+		}
+	}
+}

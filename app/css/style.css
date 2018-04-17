@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* Tạo chuyển động trong nav */
+@keyframes opacity-slowin {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes move {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@keyframes move-form-cv-in {
+  from {
+    right: 0%;
+    top: 160px; }
+  to {
+    right: 100px;
+    top: 160px; } }
+
+@keyframes placeholderinput {
+  from {
+    top: 0; }
+  to {
+    top: -20px;
+    left: 0; } }
+
+@keyframes movecloud {
+  from {
+    height: 0%;
+    opacity: 1; }
+  to {
+    height: 110%;
+    opacity: 0; } }
+
+@keyframes widthtalkchat {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes rotateclose {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); } }
+
+@keyframes rotatenotclose {
+  from {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg); } }
+
+/* Xoay tron */
+/* End */
+/* Font-familr */
+/* media queries */
+/* device */
+.fl-r {
+  float: right; }
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start; }
+
+.flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.color-red {
+  color: red; }
+
+.font-18 {
+  font-size: 18px !important; }
+
+.margin-left-2 {
+  margin-left: 2px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  .mobile-none {
+    display: none; } }
+
+/* Element */
+.content__job__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 80px; }
+  @media (max-width: 767px) {
+    .content__job__title {
+      margin-top: 20px; } }
+  .content__job__title p {
+    font-size: 24px;
+    color: #454545;
+    line-height: normal;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .content__job__title p {
+        font-size: 18px;
+        color: #454545;
+        line-height: normal; } }
+
+.content__about {
+  margin-top: 70px;
+  margin-bottom: 150px; }
+  .content__about__company__product {
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 20px; }
+    .content__about__company__product .content__about__company__product__title {
+      margin-bottom: 60px;
+      font-size: 24px; }
