@@ -280,3 +280,7 @@ $('body').click(function (event) {
 $('.quick-view ').click(function () {
 	$('#myModal').modal('show');
 })
+$('#add-cart').click(function(){
+	$('#myModal').modal('hide');
+	$('#popup-cart').modal('show');
+})

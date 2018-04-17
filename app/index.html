@@ -5,12 +5,10 @@
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    Giao diện mẫu Big-shoe dành cho web website kinh doanh thời trang Big Shoe
+    Giao diện mẫu Bỉm sữa dành cho web website kinh doanh thời trang Bỉm sữa
   </title>
 
-  <link rel="icon" href="favicon.png-1520213921167.png" tppabs="https://bizweb.dktcdn.net/100/091/132/themes/633981/assets/favicon.png?1520213921167"
-    type="image/x-icon" />
-
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -28,16 +26,13 @@
 </head>
 
 <body>
-  <!-- Get default informations -->
-  <!-- end !! get default informations -->
-  <!-- Main content -->
   <header class="header">
     <div class="topbar hidden-xs">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 a-left header-info">
             <span class="hidden-sm hidden-xs">
-              Chào mừng bạn đã đến với Big Shoe !
+              Chào mừng bạn đã đến với Bỉm sữa Việt Nam !
             </span>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 a-right">
@@ -107,29 +102,47 @@
                     </div>
                     <div class="top-cart-content">
                       <ul id="cart-sidebar" class="mini-products-list count_li">
-                        <li class="list-item">
-                          <ul></ul>
-                        </li>
-                        <li class="action">
-                          <ul>
-                            <li class="li-fix-1">
-                              <div class="top-subtotal">
-                                Tổng tiền thanh toán:
-                                <span class="price"></span>
+                        <ul class="list-item-cart">
+                          <li class="item productid-4566103">
+                            <a class="product-image" href="/giay-converse-all-star-rubber" title="Giày Converse All Star Rubber - Ghi">
+                              <img alt="Giày Converse All Star Rubber - Ghi" src="images/7-min-a52ba550-691c-47cf-912b-643b8f8cc082.jpg-v=1468202963977.jpg">
+                            </a>
+                            <div class="detail-item">
+                              <div class="product-details">
+                                <a href="javascript:;" data-id="4566103" title="Xóa" class="remove-item-cart fa fa-times-circle">&nbsp;</a>
+                                <p class="product-name text3line">
+                                  <a href="/giay-converse-all-star-rubber" title="Giày Converse All Star Rubber - Ghi">Giày Converse All Star Rubber</a>
+                                </p>
+                                <p class="hover-cart-variant-title">
+                                  <span>Ghi</span>
+                                </p>
                               </div>
-                            </li>
-                            <li class="li-fix-2" style="">
-                              <div class="actions">
-                                <a href="cart.html" class="btn btn-primary">
-                                  <span>Giỏ hàng</span>
-                                </a>
-                                <a href="cart.html" class="btn btn-checkout btn-gray">
-                                  <span>Thanh toán</span>
-                                </a>
+                              <div class="product-details-bottom">
+                                <span class="price">800.000₫</span>
+                                <div class="quantity-select">
+                                  <input class="variantID" type="hidden" name="variantId" value="4566103">
+                                  <button onclick="var result = document.getElementById('qty4566103'); var qty4566103 = result.value; if( !isNaN( qty4566103 ) &amp;&amp; qty4566103 > 1 ) result.value--;return false;"
+                                    class="reduced items-count btn-minus" disabled="" type="button">–</button>
+                                  <input type="text" maxlength="12" min="0" class="input-text number-sidebar qty4566103"
+                                    id="qty4566103" name="Lines" size="4" value="1">
+                                  <button onclick="var result = document.getElementById('qty4566103'); var qty4566103 = result.value; if( !isNaN( qty4566103 )) result.value++;return false;"
+                                    class="increase items-count btn-plus" type="button">+</button>
+                                </div>
                               </div>
-                            </li>
-                          </ul>
-                        </li>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="top-subtotal">Thành tiền:
+                          <span class="price">800.000₫</span>
+                        </div>
+                        <div class="actions">
+                          <a href="/cart" class="btn btn-style btn-transition btn-to-cart" title="Tới giỏ hàng">
+                            <span>Giỏ hàng</span>
+                          </a>
+                          <a href="/checkout" class="btn btn-style btn-transition btn-checkout" title="Tiến hành thành toán">
+                            <span>Thanh toán</span>
+                          </a>
+                        </div>
                       </ul>
                     </div>
                   </div>
@@ -2754,8 +2767,8 @@
     </div>
   </div> -->
   <!-- Add to cart -->
-
-  <!-- <div id="popup-cart" class="modal fade" role="dialog">
+  <!-- Popup cart -->
+  <div id="popup-cart" class="modal fade" role="dialog">
     <div id="popup-cart-desktop" class="clearfix">
       <div class="title-popup-cart">
         <i class="fa fa-check" aria-hidden="true"></i> Sản phẩm đã được thêm vào giỏ hàng
@@ -2802,7 +2815,8 @@
         <i class="fa  fa-close"></i>
       </a>
     </div>
-  </div> -->
+  </div>
+  <!-- End -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <!-- Modal content-->
@@ -2868,7 +2882,7 @@
                         </button>
                       </div>
                     </div>
-                    <button type="submit" name="add" class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart add_to_cart_detail ajax_addtocart">
+                    <button id="add-cart" type="submit" name="add" class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart add_to_cart_detail ajax_addtocart">
                       <span>Thêm vào giỏ hàng</span>
                     </button>
                   </div>
