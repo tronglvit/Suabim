@@ -24,3 +24,32 @@
         display: none;
     }
 }
+.main-header{
+    min-height: 133px;
+    @include mobile{
+        min-height: 120px;
+        max-height: 120px;
+    }
+}
+header nav:before{
+    border: none !important;
+}
+.module-header .module-title.style-1:before,.module-header .module-title.style-1:after{
+    border: none !important;
+}
+header nav{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+
+}
+footer .mid-footer{
+    border-top: none !important;
+}
+.main-container .col-main .cart .cart-tbody .item-cart .product-image img{
+    max-height: 80px;
+}
+.img-product-mobile{
+    height: 80px;
+    object-fit: cover;
+}
