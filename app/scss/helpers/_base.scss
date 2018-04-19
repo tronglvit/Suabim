@@ -19,6 +19,9 @@
 .margin-bottom-20{
     margin-bottom: 20px;
 }
+.margin-left-10{
+    margin-left:10px;
+}
 .mobile-none{
     @include mobile{
         display: none;
@@ -52,4 +55,45 @@ footer .mid-footer{
 .img-product-mobile{
     height: 80px;
     object-fit: cover;
+}
+.modal-content{
+    border-radius:0;
+}
+.close-modal {
+    position: absolute;
+    top: -7px !important;
+    right: -19px !important;
+    text-align: center;
+}
+#quick-view-product form button:hover {
+    background: #dc3333;
+}
+.btn, input[type="submit"] {
+    white-space: nowrap;
+    outline: none !important;
+    cursor: pointer;
+    letter-spacing: 0;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    background-color: rgba(220, 51, 51, 0.91);
+    padding: 0 20px;
+    line-height: 40px;
+    -webkit-transition: background-color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in;
+    -ms-transition: background-color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    }
+#popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-1 .popup-ship p a {
+    text-decoration: none !important;
+}
+
+.height-100vh{
+    min-height:100vh !important;
+    @include mobile{
+        min-height:100% !important;
+    }
 }
