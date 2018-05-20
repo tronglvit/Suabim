@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>
+        Thanh toán hóa đơn
+    </title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <script src='js/jquery.min.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='css/menu.scss.css' rel='stylesheet' />
+    <link href="css/checkout.css" rel="stylesheet" />
+    <link href='css/style.css' rel='stylesheet' />
+
+
+</head>
+<body class="body--custom-background-color ">
+    <div class="banner" data-header="">
+        <div class="wrap">
+            <div class="shop logo logo--left ">
+
+                <h1 class="shop__name">
+                    <a href="/">
+                        Big Mpom
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <button class="order-summary-toggle" bind-event-click="Bizweb.StoreCheckout.toggleOrderSummary(this)">
+        <div class="wrap">
+            <h2 class="flex-start">
+                <label class="control-label">Đơn hàng</label>
+                <label class="control-label hidden-small-device">
+                    (2 sản phẩm)
+                </label>
+
+            </h2>
+            <a class="underline-none expandable pull-right" href="javascript:void(0)">
+                Xem chi tiết
+            </a>
+        </div>
+    </button>
+    <form method="post" action="" data-toggle="validator" class="content stateful-form formCheckout">
+        <div class="wrap" context="checkout">
+            <div class='sidebar height-100vh '>
+                <div class="sidebar_header">
+                    <h2 class="flex-start">
+                        <label class="control-label">Đơn hàng</label>
+                        <label class="control-label">(2 sản phẩm)</label>
+                    </h2>
+                    <hr class="full_width" />
+                </div>
+                <div class="sidebar__content">
+                    <div class="order-summary order-summary--product-list order-summary--is-collapsed">
+                        <div class="summary-body summary-section summary-product">
+                            <div class="summary-product-list">
+                                <table class="product-table">
+                                    <tbody>
+                                        <tr class="product product-has-image clearfix">
+                                            <td>
+                                                <div class="product-thumbnail">
+                                                    <div class="product-thumbnail__wrapper">
+
+                                                        <img src='images/my-pham_sua-bot-abbott-similac-mom-iq-900g.jpg' class='product-thumbnail__image' />
+
+                                                    </div>
+                                                    <span class="product-thumbnail__quantity" aria-hidden="true">1</span>
+                                                </div>
+                                            </td>
+                                            <td class="product-info">
+                                                <span class="product-info-name">
+
+                                                    Giày vải Star Floral Crochet
+                                                </span>
+
+                                                <span class="product-info-description">
+                                                    Trắng
+                                                </span>
+                                            </td>
+                                            <td class="product-price text-right">
+                                                600.000₫
+                                            </td>
+                                        </tr>
+                                        <tr class="product product-has-image clearfix">
+                                            <td>
+                                                <div class="product-thumbnail">
+                                                    <div class="product-thumbnail__wrapper">
+                                                        <img src='images/my-pham_sua-bot-abbott-similac-mom-iq-900g.jpg' class='product-thumbnail__image' />
+                                                    </div>
+                                                    <span class="product-thumbnail__quantity" aria-hidden="true">1</span>
+                                                </div>
+                                            </td>
+                                            <td class="product-info">
+                                                <span class="product-info-name">
+                                                    Giày Chuck Taylor All Star II Neon
+                                                </span>
+
+                                                <span class="product-info-description">
+                                                    Đen
+                                                </span>
+                                            </td>
+                                            <td class="product-price text-right">
+                                                650.000₫
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="order-summary__scroll-indicator">
+                                    Cuộn chuột để xem thêm
+                                    <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m0" />
+                    </div>
+                    <div class="order-summary order-summary--discount">
+                        <div class="summary-section">
+                            <div class="form-group m0" bind-show="!existCode ||code == null || !code.length">
+                                <div class="field__input-btn-wrapper">
+                                    <div class="field__input-wrapper">
+                                        <input bind="code" name="code" type="text" class="form-control discount_code" placeholder="Nhập mã giảm giá" value="" />
+                                    </div>
+                                    <button class="btn btn-primary event-voucher-apply" type="button">Áp dụng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m0" />
+                    </div>
+                    <div class="order-summary order-summary--total-lines">
+                        <div class="summary-section border-top-none--mobile">
+                            <div class="total-line total-line-subtotal clearfix">
+                                <span class="total-line-name pull-left">
+                                    Tạm tính
+                                </span>
+                                <span class="total-line-subprice pull-right">
+                                    1.250.000₫
+                                </span>
+                            </div>
+                            <div class="total-line total-line-shipping clearfix">
+                                <span class="total-line-name pull-left">
+                                    Phí vận chuyển
+                                </span>
+                                <span>
+                                    Miễn phí
+                                </span>
+                            </div>
+                            <div class="total-line total-line-total clearfix">
+                                <span class="total-line-name pull-left">
+                                    Tổng cộng
+                                </span>
+                                <span class="total-line-price pull-right">
+                                    1.250.000₫
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix hidden-sm hidden-xs">
+                        <div class="field__input-btn-wrapper mt10">
+                            <a class="previous-link" href="cart.html">
+                                <i class="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+                                <span>Quay về giỏ hàng</span>
+                            </a>
+                            <input class="btn btn-primary btn-checkout" data-loading-text="Đang xử lý" type="button" value="ĐẶT HÀNG" />
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="help-block ">
+                            <ul class="list-unstyled"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main" role="main">
+                <div class="main_header">
+                    <div class="shop logo logo--left ">
+                        <h1 class="shop__name">
+                            <a href="/">
+                                Big Mom
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="main_content">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8">
+                            <div class="section">
+                                <div class="section__header">
+                                    <div class="layout-flex layout-flex--wrap">
+                                        <h2 class="section__title layout-flex__item layout-flex__item--stretch">
+                                            <label class="control-label">Thông tin mua hàng</label>
+                                        </h2>
+                                        <a class="layout-flex__item section__title--link " href="">
+                                            <i class="fa fa-user fa-lg"></i>
+                                            Đăng nhập
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="section__content">
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="field__input-wrapper">
+                                                <span class="field__label" bind-event-click="handleClick(this)">
+                                                    Email
+                                                </span>
+                                                <input name="Email" type="email" class="field__input form-control" />
+                                            </label>
+                                        </div>
+                                        <div class="help-block with-errors">
+                                        </div>
+                                    </div>
+                                    <div class="billing">
+                                        <div>
+                                            <div class="form-group">
+                                                <div class="field__input-wrapper">
+                                                    <span class="field__label">
+                                                        Họ và tên
+                                                    </span>
+                                                    <input type="text" class="field__input form-control" />
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="field__input-wrapper">
+                                                    <span class="field__label" bind-event-click="handleClick(this)">
+                                                        Số điện thoại
+                                                    </span>
+                                                    <input name="BillingAddress.Phone" type="text" class="field__input form-control" />
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <div class="field__input-wrapper">
+                                                    <span class="field__label">
+                                                        Địa chỉ
+                                                    </span>
+                                                    <input type="text" class="field__input form-control" />
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="field__input-wrapper field__input-wrapper--select">
+                                                    <span class="field__label">
+                                                        Chọn tỉnh thành
+                                                    </span>
+                                                    <select class="field__input field__input--select form-control"></select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="field__input-wrapper field__input-wrapper--select">
+                                                    <label class="field__label" for="BillingDistrictId">
+                                                        Quận huyện
+                                                    </label>
+                                                    <select class="field__input field__input--select form-control"></select>
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section__content">
+                                    <div class="form-group m0">
+                                        <textarea name="note"  value="" class="field__input form-control m0" placeholder="Ghi chú"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src='js/twin.min.js' type='text/javascript'></script>
+    <script src='js/nprogress.js' type='text/javascript'></script>
+    <script src='js/checkout.js' type='text/javascript'></script>
+    <script type="text/javascript">
+        $(document).ajaxStart(function () {
+            NProgress.start();
+        });
+        $(document).ajaxComplete(function () {
+            NProgress.done();
+        });
+
+        context = {}
+
+        $(function () {
+            Twine.reset(context).bind().refresh();
+        });
+
+        $(document).ready(function () {
+            setTimeout(function () {
+            }, 50);
+
+        });
+    </script>
+
+</body>
+</html>

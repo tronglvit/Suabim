@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    Giao diện mẫu Bỉm sữa dành cho web website kinh doanh thời trang Bỉm sữa
+  </title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href='css/ow.carousel.min.css' rel='stylesheet' />
+  <link href='css/base.scss.css' rel='stylesheet' />
+  <link href='css/style2.scss.css' rel='stylesheet' />
+  <link href='css/update.scss.css' rel='stylesheet' />
+  <link href='css/module.scss.css' rel='stylesheet' />
+  <link href='css/responsive.scss.css' rel='stylesheet' />
+  <link href='css/update_style.scss.css' rel='stylesheet' />
+  <link href='css/style.css' rel='stylesheet' />
+  <script src='js/jquery.min.js' type='text/javascript'></script>
+  <link href='css/menu.scss.css' rel='stylesheet' />
+</head>
+
+<body>
+  <header class="header">
+    <!-------Top header-------->
+    <div class="topbar hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 a-left header-info">
+            <span class="hidden-sm hidden-xs">
+              Chào mừng bạn đã đến với Bỉm sữa Việt Nam !
+            </span>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 a-right">
+            <ul class="social-info">
+              <li>
+                <a href="#" class="hv-bg-twitter btn-transition" title="twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hv-bg-facebook btn-transition" title="facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hv-bg-google-plus btn-transition" title="google plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
+            <div class="logo">
+              <a title="Big Shoe" href="index.html">
+                <img class="img-responsive" src="images/logo2.png" alt="logo Big Shoe">
+              </a>
+            </div>
+          </div>
+          <div class="hidden-xs hidden-sm col-md-6 col-lg-6 search_area">
+            <div class="search_trend hidden-sm hidden-xs">
+              <ul>
+                <li class="trend_title">
+                  Xu hướng tìm kiếm
+                </li>
+                <li>
+                  <a href="converse">converse</a>
+                </li>
+                <li>
+                  <a href="giay-da">giày da</a>
+                </li>
+                <li>
+                  <a href="giay-thoi-trang-nam">giày thời trang nam</a>
+                </li>
+              </ul>
+            </div>
+            <div class="search_form">
+              <form action="#" method="get" class="search-form" role="search">
+                <input placeholder="Tìm kiếm ..." class="search_input" type="text" name="query" value="" />
+                <input type="submit" value="Tìm kiếm" class="btnsearch" />
+                <span class='arrow-left-search'></span>
+              </form>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-4 col-md-3 col-lg-3 account-cart">
+            <div class="row">
+              <div class="col-sm-7 col-md-8 col-lg-8 account">
+                <ul class="account-info">
+                  <li>
+                    <a href="#">Đăng nhập</a>
+                  </li>
+                  <li>
+                    <a href="#">Đăng ký</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 col-md-4 col-lg-4 cart-header">
+                <div class="top-cart-contain">
+                  <div class="mini-cart text-xs-center">
+                    <div class="heading-cart">
+                      <a href="cart.html">
+                        <span class="cartCount count_item_pr" id="cart-total">0</span>
+                        <span class="cart-text">Giỏ hàng</span>
+                      </a>
+                    </div>
+                    <div class="top-cart-content">
+                      <ul id="cart-sidebar" class="mini-products-list count_li">
+                        <ul class="list-item-cart">
+                          <li class="item productid-4566103">
+                            <a class="product-image" href="#" title="">
+                              <img alt="" src="images/my-pham_sua-bau-similac-mom-400g_2.jpg">
+                            </a>
+                            <div class="detail-item">
+                              <div class="product-details">
+                                <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-times-circle">&nbsp;</a>
+                                <p class="product-name text3line">
+                                  <a href="#" title="">Giày Converse All Star Rubber</a>
+                                </p>
+                                <p class="hover-cart-variant-title">
+                                  <span>Ghi</span>
+                                </p>
+                              </div>
+                              <div class="product-details-bottom">
+                                <span class="price">800.000₫</span>
+                                <div class="quantity-select">
+                                  <input class="variantID" type="hidden" name="variantId" value="4566103">
+                                  <button class="reduced items-count btn-minus" type="button">–</button>
+                                  <input type="text" maxlength="12" min="0" class="input-text number-sidebar qty4566103" id="qty4566103" name="Lines" size="4"
+                                    value="1">
+                                  <button class="increase items-count btn-plus" type="button">+</button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="top-subtotal">
+                          Thành tiền:
+                          <span class="price">800.000₫</span>
+                        </div>
+                        <div class="actions">
+                          <a href="/cart.html" class="btn btn-style btn-transition btn-to-cart" title="Tới giỏ hàng">
+                            <span>Giỏ hàng</span>
+                          </a>
+                          <a href="/checkout.html" class="btn btn-style btn-transition btn-checkout" title="Tiến hành thành toán">
+                            <span>Thanh toán</span>
+                          </a>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------Kết thúc Top header------->
+    <!------Menu Pc------>
+    <div class="menu-header menu-nav hidden-sm hidden-xs">
+      <nav>
+        <ul id="nav" class="nav container">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" title="Trang chủ">
+              <i class="fa fa-home"></i> Trang chủ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gioi-thieu.html" title="Về chúng tôi">
+              Về chúng tôi
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="all.html" class="nav-link" title="Sản phẩm">
+              Sản phẩm
+              <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="san-pham-moi-ve.html" title="">
+                  Bộ sưu tập mới
+                </a>
+              </li>
+              <li class="dropdown-submenu nav-item-lv2">
+                <a class="nav-link" href="#" title="">
+                  Sữa Similac
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" title="">
+                      Sữa mẹ
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa Friso
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa Physiolac
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa Aptamil
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa bột S26
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa Nido
+                    </a>
+                  </li>
+                  <li class="nav-item-lv3">
+                    <a class="nav-link" href="#" title="">
+                      Sữa Meta Care
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="#" title="">
+                  Sữa Milo Úc
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tin-tuc.html" class="nav-link" title="Tin tức">
+              Tin tức
+              <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item-lv2">
+                <a class="nav-link" href="#" title="Tin tức khuyến mãi">
+                  Tin tức khuyến mãi
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lien-he.htm" title="Liên hệ">
+              Liên hệ
+            </a>
+          </li>
+          <li class="menu_hotline">
+            <img class="img-responsive" src="images/hotline_pc.png" alt="Hotline" />
+            <a href="tel:19006750">
+              Hotline:
+              <span>1900 6750</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-------Hết menu pc------->
+    <!------Menu menu responsive------>
+    <div class="menu-mobile menu-nav hidden-md hidden-lg">
+      <div class="sidebar-menu sidebar_menu site-nav-mobile">
+        <div class="sidebar-menu-title module-header">
+          <div class="module-title">
+            <i class="fa fa-bars"></i>
+          </div>
+          <a class="mobile-cart hidden-sm" href="cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="cart-count-mobile">0</span>
+          </a>
+        </div>
+        <div class="sidebar-menu-content">
+          <div class="sidebar-linklists mobile-menu-linklists">
+            <ul>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu active">
+                <a class="ajaxLayer" href="index.html" title="Trang chủ">
+                  <span>Trang chủ</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="gioi-thieu.html" title="Về chúng tôi">
+                  <span>Về chúng tôi</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="all.html" title="Sản phẩm">
+                  <span>Sản phẩm</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="tin-tuc.htmll" title="Tin tức">
+                  <span>Tin tức</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list menu-item collection-sidebar-menu">
+                <a class="ajaxLayer" href="lien-he.html" title="Liên hệ">
+                  <span>Liên hệ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="full-width">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="search_form">
+                <form action="#" method="get" class="search-form" role="search">
+                  <input placeholder="Tìm kiếm ..." class="search_input" type="text" name="query" value="" />
+                  <button type="submit" class="btnsearch">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="hotline_mobile">
+                <a href="tel:19006750">
+                  <img src="images/hotline_mobile.png" alt="Hotline" class="img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------Hết menu responsive------->
+  </header>
+  <!-- End header -->
+  </header>
+  <section class="collection-template">
+      <div class="blog-article-template blog" itemscope itemtype="http://schema.org/Blog">
+        <meta itemprop="name" content="Tin tức">
+        <meta itemprop="description" content="Chủ đề không có mô tả">
+        <section class="bread-crumb">
+           <div class="container">
+              <div class="row">
+                 <div class="col-xs-12">
+                    <ul class="breadcrumb list-unstyled" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                       <li class="home">
+                          <a itemprop="url" href="/" title="Về trang chủ">
+                          <span itemprop="title">Trang chủ</span>
+                          </a>
+                       </li>
+                       <li>
+                          <strong itemprop="title">Tin tức</strong>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </section>
+        <div class="container">
+           <div class="row">
+              <section class="main-content col-xs-12 col-sm-12 col-md-9 col-lg-9 col-md-push-3 col-lg-push-3">
+                 <div class="module-header">
+                    <h1 class="module-title title-head title-head-custom">
+                       <span>Tin tức</span>
+                    </h1>
+                 </div>
+                 <div class="module-content">
+                    <div class="list-blogs blog-main">
+                       <article class="blog-item">
+                          <div class="row">
+                             <div class="blog-item-thumbnail col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                                <a href="" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   <picture>
+                                      <img class="img-responsive" src="images/my-pham_sua-bestsure-gold-900g.jpg" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"/>
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="blog-item-info col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                                <h3 class="blog-item-name text2line">
+                                   <a class="btn-transition" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">Chọn giày thể thao cho bạn gái nữ tính</a>
+                                </h3>
+                                <div class="post-details">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar "></i> 28/05/2016
+                                   </span>
+                                </div>
+                                <div class="blog-item-summary text3line">
+                                   Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể thao mang phong cách trẻ trung. 
+                                </div>
+                                <div class="viewmore">
+                                   <a class="btn btn_hover_black" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   Đọc thêm <i class="fa fa-long-arrow-right"></i>
+                                   </a>
+                                </div>
+                             </div>
+                          </div>
+                       </article>
+                       <article class="blog-item">
+                          <div class="row">
+                             <div class="blog-item-thumbnail col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                                <a href="" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   <picture>
+                                      <img class="img-responsive" src="images/my-pham_sua-bestsure-gold-900g.jpg" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"/>
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="blog-item-info col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                                <h3 class="blog-item-name text2line">
+                                   <a class="btn-transition" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">Chọn giày thể thao cho bạn gái nữ tính</a>
+                                </h3>
+                                <div class="post-details">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar "></i> 28/05/2016
+                                   </span>
+                                </div>
+                                <div class="blog-item-summary text3line">
+                                   Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể thao mang phong cách trẻ trung. 
+                                </div>
+                                <div class="viewmore">
+                                   <a class="btn btn_hover_black" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   Đọc thêm <i class="fa fa-long-arrow-right"></i>
+                                   </a>
+                                </div>
+                             </div>
+                          </div>
+                       </article>
+                       <article class="blog-item">
+                          <div class="row">
+                             <div class="blog-item-thumbnail col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                                <a href="" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   <picture>
+                                      <img class="img-responsive" src="images/my-pham_sua-bestsure-gold-900g.jpg" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh"/>
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="blog-item-info col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                                <h3 class="blog-item-name text2line">
+                                   <a class="btn-transition" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">Chọn giày thể thao cho bạn gái nữ tính</a>
+                                </h3>
+                                <div class="post-details">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar "></i> 28/05/2016
+                                   </span>
+                                </div>
+                                <div class="blog-item-summary text3line">
+                                   Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể thao mang phong cách trẻ trung. 
+                                </div>
+                                <div class="viewmore">
+                                   <a class="btn btn_hover_black" href="post_detail.html" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   Đọc thêm <i class="fa fa-long-arrow-right"></i>
+                                   </a>
+                                </div>
+                             </div>
+                          </div>
+                       </article>
+                    </div>
+                 </div>
+              </section>
+              <aside class="sidebar left left-content col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-pull-9 col-lg-pull-9">
+                 <div class="aside-item sidebar_menu">
+                    <div class="module-header">
+                       <h2 class="module-title style-1">
+                          <a href="">
+                          <i class="fa fa-bars"></i>
+                          <span>Danh mục tin tức</span>
+                          </a>
+                       </h2>
+                    </div>
+                    <div class="module-content">
+                       <ul class="menu-list">
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/tin-tuc-khuyen-mai" title="Tin tức khuyến mãi">
+                             <span>Tin tức khuyến mãi </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/tin-tuc-giay" title="Tin tức giày">
+                             <span>Tin tức giày </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/thoi-trang-cuoc-song" title="Thời trang & cuộc sống">
+                             <span>Thời trang & cuộc sống </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/xu-huong-thoi-trang" title="Xu hướng thời trang">
+                             <span>Xu hướng thời trang </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/dep-giay" title="Đẹp + giày ...">
+                             <span>Đẹp + giày ... </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/tin-thuong-hieu" title="Tin thương hiệu">
+                             <span>Tin thương hiệu </span>
+                             </a>
+                          </li>
+                          <li class="menu-item lv1 ">
+                             <a class="" href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">
+                             <span>Câu hỏi thường gặp (1)</span>
+                             </a>
+                          </li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="aside-item sidebar_news">
+                    <div class="module-header">
+                       <h2 class="module-title style-1">
+                          <a href="tin-tuc" title="Tin tức">
+                          <span>Tin tức</span>
+                          </a>
+                       </h2>
+                    </div>
+                    <div class="module-content">
+                       <div class="owl-carousel owl-theme top-right nav-style-1" data-lg-items="1" data-md-items="1" data-sm-items="2" data-xs-items="2" data-xxs-items="1" data-nav="true">
+                          <div class="item">
+                             <div class="article-thumbnail">
+                                <a href="/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   <picture>
+                                      <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh2.png?v=1466158653610"/>
+                                      <img class="img-responsive" src="//bizweb.dktcdn.net/100/091/132/articles/anh2.png?v=1466158653610" alt="chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh">
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="article-info">
+                                <h3 class="article-name">
+                                   <a href="/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                   <span>Chọn giày thể thao cho bạn gái nữ tính</span>
+                                   </a>
+                                </h3>
+                                <p class="article-detail">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar"></i> 28/05/2016
+                                   </span>
+                                </p>
+                                <div class="article-summary">
+                                   <div class="article-summary-or-content text3line">
+                                      Giày thể thao đang là phụ kiện không thể thiếu trong tủ giày dép của các bạn gái. Những đôi giày thể thao với thiết kế đa dạng, nhiều màu sắc thường được phái đẹp lựa chọn. Những đôi giày thể th...
+                                   </div>
+                                   <p class="margin-0">
+                                      <a class="text-danger" href="/chon-giay-the-thao-cho-ba-n-ga-i-nu-tinh" title="Chọn giày thể thao cho bạn gái nữ tính">
+                                      [Đọc tiếp...]
+                                      </a>
+                                   </p>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="item">
+                             <div class="article-thumbnail">
+                                <a href="/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii" title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                                   <picture>
+                                      <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh1.png?v=1466157783620"/>
+                                      <img class="img-responsive" src="//bizweb.dktcdn.net/100/091/132/articles/anh1.png?v=1466157783620" alt="gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii">
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="article-info">
+                                <h3 class="article-name">
+                                   <a href="/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii" title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                                   <span>Giới trẻ sốt rần rần với giày Converse Chuck II</span>
+                                   </a>
+                                </h3>
+                                <p class="article-detail">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar"></i> 27/05/2016
+                                   </span>
+                                </p>
+                                <div class="article-summary">
+                                   <div class="article-summary-or-content text3line">
+                                      Chuck II, "hậu duệ" của mẫu giày Chuck Taylor 98 năm tuổi đình đám đang là từ khóa "hot" nhất trong từ điển của các bạn trẻ Việt mê giày những ngày qua. 28/7 vừa qua, thương hiệu Converse đã chính...
+                                   </div>
+                                   <p class="margin-0">
+                                      <a class="text-danger" href="/gioi-tre-sot-ran-ran-voi-giay-converse-chuck-ii" title="Giới trẻ sốt rần rần với giày Converse Chuck II">
+                                      [Đọc tiếp...]
+                                      </a>
+                                   </p>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="item">
+                             <div class="article-thumbnail">
+                                <a href="/bi-kip-phan-biet-giay-converse-that-hay-gia" title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                                   <picture>
+                                      <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/091/132/articles/anh3.png?v=1466157559277"/>
+                                      <img class="img-responsive" src="//bizweb.dktcdn.net/100/091/132/articles/anh3.png?v=1466157559277" alt="bi-kip-phan-biet-giay-converse-that-hay-gia">
+                                   </picture>
+                                </a>
+                             </div>
+                             <div class="article-info">
+                                <h3 class="article-name">
+                                   <a href="/bi-kip-phan-biet-giay-converse-that-hay-gia" title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                                   <span>'Bí kíp' phân biệt giày Converse thật hay giả</span>
+                                   </a>
+                                </h3>
+                                <p class="article-detail">
+                                   <span>
+                                   <i class="fa fa-user"></i> Nguyễn Ngọc Dũng
+                                   </span>
+                                   <span>
+                                   <i class="fa fa-calendar"></i> 24/05/2016
+                                   </span>
+                                </p>
+                                <div class="article-summary">
+                                   <div class="article-summary-or-content text3line">
+                                      Giày Converse thật thường có giá khá cao, xứng tầm với thương hiệu và chất lượng của nó. Hiện nay trên thị trường giày, một đôi Converse hàng hiệu chính hãng thường có giá dao động từ 500.000 đến ...
+                                   </div>
+                                   <p class="margin-0">
+                                      <a class="text-danger" href="/bi-kip-phan-biet-giay-converse-that-hay-gia" title="'Bí kíp' phân biệt giày Converse thật hay giả">
+                                      [Đọc tiếp...]
+                                      </a>
+                                   </p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="aside-item sidebar_banner banner hidden-sm hidden-xs">
+                    <div class="module-content">
+                       <a href="#" title="">
+                       <img class="img-responsive" src="//bizweb.dktcdn.net/100/091/132/themes/633981/assets/blog_sidebar_banner_image.png?1524475379240" alt="big-shoe">
+                       </a>
+                    </div>
+                 </div>
+              </aside>
+           </div>
+        </div>
+     </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="mid-footer">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 payment_methods">
+            <h4 class="foo-title">
+              <span>Hỗ trợ thanh toán</span>
+            </h4>
+            <div class="foo-content">
+              <ul class="list-menu">
+                <li class="payment_method">
+                  <img src="images/payment_1_image.png" alt="master-card" title="Master Card" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_2_image.png" alt="visa" title="Visa" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_3_image.png" alt="tien-mat" title="Tiền mặt" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_4_image.png" alt="chuyen-khoan" title="Chuyển khoản" class="img-responsive" />
+                </li>
+                <li class="payment_method">
+                  <img src="images/payment_5_image.png" alt="atm-noi-dia" title="ATM nội địa" class="img-responsive" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 customer_care">
+            <h4 class="foo-title">
+              <span>Giải đáp thắc mắc</span>
+            </h4>
+            <div class="foo-content">
+              <div class="care_image">
+                <img src="images/customer_care_image.png" alt="Giải đáp thắc mắc" class="img-responsive" />
+              </div>
+              <ul class="list-menu">
+                <li class="care_info">
+                  <p class="care-title">
+                    Tư vấn miễn phí (24/7)
+                  </p>
+                  <p class="care-phone">
+                    <a href="tel:01212111212" title="Gọi tới: 01212111212">
+                      01212111212
+                    </a>
+                  </p>
+                </li>
+                <li class="care_info">
+                  <p class="care-title">
+                    Góp ý, phản ánh (8h00 - 20h00)
+                  </p>
+                  <p class="care-phone">
+                    <a href="tel:01212111212" title="Gọi tới: 01212111212">
+                      01212111212
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="bottom-footer">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 class="foo-title">
+              <span>Công ty cổ phần công nghệ AOE</span>
+            </h4>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info_col">
+                <p class="store-address">
+                  Trụ sở chính: Tầng 20 - Tòa nhà Hapulico - Vũ Trọng Phụng - Thanh Xuân - Hà Nội
+                </p>
+                <p class="store-phone">
+                  <span>
+                    Điện thoại :
+                  </span>
+                  <span>
+                    <a href="tel:0466742332">(04) 6674 2332</a>
+                    <a href="tel:0437868904"> - (04) 3786 8904</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <span>© Bản quyền thuộc về Team AE</span>
+            <span class="hidden-xs"> | </span>
+            <span>
+              Cung cấp bởi
+              <a href="#s" rel="nofollow" target="_blank">Hapulico</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-circle-up"></i>
+    </div>
+  </footer>
+  <!-- Bizweb javascript -->
+  <script src="js/option-selector.js" type='text/javascript'></script>
+  <script src="js/api.jquery.js" type='text/javascript'></script>
+  <!-- Plugin JS -->
+  <script src="js/ow.carousel.min.js" type='text/javascript'></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-----Giỏ hàng----->
+  <div id="popup-cart" class="modal fade" role="dialog">
+    <div id="popup-cart-desktop" class="clearfix">
+      <div class="title-popup-cart">
+        <i class="fa fa-check" aria-hidden="true"></i> Sản phẩm đã được thêm vào giỏ hàng
+      </div>
+      <div class="title-quantity-popup" onclick="window.location.href='cart.html'">
+        Giỏ hàng của bạn (
+        <span class="cart-popup-count"></span> sản phẩm)
+      </div>
+      <div class="content-popup-cart">
+        <div class="thead-popup">
+          <div style="width: 180px;" class="text-center">Ảnh sản phẩm</div>
+          <div style="width: 310px;" class="text-left">Tên sản phẩm</div>
+          <div style="width: 140px;" class="text-center">Đơn giá</div>
+          <div style="width: 100px;" class="text-center">Số lượng</div>
+          <div style="width: 130px;" class="text-center">Thành tiền</div>
+          <div style="width:  70px;" class="text-center">Xoá</div>
+        </div>
+        <div class="tbody-popup">
+        </div>
+        <div class="tfoot-popup">
+          <div class="tfoot-popup-1 clearfix">
+            <div class="pull-left popup-ship">
+              <p>
+                <a href="cart.htm" class="line_bottom" title="Tới giỏ hàng">
+                  Đi tới giỏ hàng
+                  <i class="fa fa-angle-double-right"></i>
+                </a>
+              </p>
+            </div>
+            <div class="pull-right popup-total">
+              <p>
+                <span>Tổng thanh toán</span>
+                <span class="total-price"></span>
+              </p>
+            </div>
+          </div>
+          <div class="tfoot-popup-2 clearfix">
+            <a class="button btn btn-style btn-transition btn-proceed-checkout" title="Tiến hành thanh toán" href="cart.htm" tppabs="https://big-shoe.bizwebvietnam.net/checkout">
+              <span>Tiến hành thanh toán</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a title="Close" class="quickview-close close-window" href="javascript:;" onclick="$('#popup-cart').modal('hide');">
+        <i class="fa  fa-close"></i>
+      </a>
+    </div>
+  </div>
+  <!-- End -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="quickview-modal">
+            <div class="block-quickview primary_block row">
+              <div class="product-left-column col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div class="clearfix image-block">
+                  <span class="view_full_size">
+                    <a class="img-product dp-flex" title="" href="#">
+                      <img id="product-featured-image-quickview" class="img-responsive product-featured-image-quickview" src="images/my-pham_sua-bestsure-gold-900g.jpg"
+                        alt="quickview" />
+                    </a>
+                  </span>
+                  <div class="loading-imgquickview"></div>
+                </div>
+                <div class="more-view-wrapper clearfix">
+                  <div id="thumbs_list_quickview">
+                    <ul class="product-photo-thumbs quickview-more-views-owlslider" id="thumblist_quickview"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product-center-column product-info product-item col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <h3>
+                  <a class="qwp-name" href="">&nbsp;Giày convert cao cấp</a>
+                </h3>
+                <p class="product_vendor_type">
+                  <span class="brand">
+                    Thương hiệu: (
+                    <em>Converse</em>)
+                  </span>
+                  <span class="type">
+                    Loại: (
+                    <em>Đang cập nhật ...</em>)
+                  </span>
+                </p>
+                <div class="quickview-info">
+                  <span class="prices price-box">
+                    <span class="price special-price">450.000₫</span>
+                    <del class="old-price">550.000₫</del>
+                  </span>
+                </div>
+                <label class="full-width">Mô tả: </label>
+                <div class="product-description ">
+                  <p>- Mắt xỏ dây âm với dây cột nylon </p>
+                </div>
+                <form action="/cart/add" method="post" enctype="multipart/form-data" class="variants form-ajaxtocart" id="product-actions-2809857">
+                  <div class="clearfix"></div>
+                  <div class="full-width">
+                    <div class="quantity_wanted_p flex-start-center margin-bottom-20">
+                      <label class="quantity-selector">Số lượng &nbsp;</label>
+                      <div class="flex-start-center">
+                        <button class="reduced count" type="button">
+                          <i class="fa fa-minus"></i>
+                        </button>
+                        <input type="text" class="input-text qty" title="Số lượng" style="margin: 0 10px 0 10px" value="1" maxlength="3" id="qty"
+                          name="quantity" onkeyup="valid(this,'numbers')" onblur="valid(this,'numbers')">
+                        <button class="increase count" type="button">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button id="add-cart" type="submit" name="add" class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart add_to_cart_detail ajax_addtocart">
+                      <span>Thêm vào giỏ hàng</span>
+                    </button>
+                  </div>
+                  <div class="total-price" style="display:none">0₫</div>
+                  <input type="hidden" name="id" value="2809857">
+                </form>
+              </div>
+              <a title="Close" class="quickview-close close-window close-modal" data-dismiss="modal" href="javascript:;">
+                <i class="fa fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quick view -->
+  <script src='js/quickview.js' type='text/javascript'></script>
+  <link href='css/quickview.scss.css' rel='stylesheet' type='text/css' />
+  <!-- Main JS -->
+  <script src='js/main.js' type='text/javascript'></script>
+  <script src='js/update_scripts.js' type='text/javascript'></script>
+</body>
+
+</html>
