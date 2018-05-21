@@ -209,10 +209,7 @@ function awe_owl() {
 function check_last_active() {
 	var x = $('.owl-carousel:not(.slider)');
 	setTimeout(function () {
-		x.find('.active .product-box').css('border-right', '#ebebeb 1px solid');
-		if (x.find('.active').last()) {
-			x.find('.active').last().find('.product-box').css('border-right', 'none');
-		}
+	
 	}, 300);
 } window.check_last_active = check_last_active;
 

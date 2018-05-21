@@ -109,7 +109,8 @@
 header nav:before {
   border: none !important; }
 
-.module-header .module-title.style-1:before, .module-header .module-title.style-1:after {
+.module-header .module-title.style-1:before,
+.module-header .module-title.style-1:after {
   border: none !important; }
 
 header nav {
@@ -139,7 +140,8 @@ footer .mid-footer {
 #quick-view-product form button:hover {
   background: #dc3333; }
 
-.btn, input[type="submit"] {
+.btn,
+input[type="submit"] {
   white-space: nowrap;
   outline: none !important;
   cursor: pointer;
@@ -186,7 +188,9 @@ footer .mid-footer {
 #show-gird .products .item:last-child {
   border-right: #ebebeb solid 1px; }
 
-header nav:before, .module-header .module-title.style-1:before, .module-header .module-title.style-1:after {
+header nav:before,
+.module-header .module-title.style-1:before,
+.module-header .module-title.style-1:after {
   content: " ";
   border: #fff thin dashed !important;
   top: 2px;
@@ -194,6 +198,45 @@ header nav:before, .module-header .module-title.style-1:before, .module-header .
   bottom: 2px;
   right: 1px;
   position: absolute; }
+
+.product-box.product-grid-item:nth-child(odd) {
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid black; }
+
+.owl-carousel.owl-drag .owl-item:first-child .product-box.product-grid-item {
+  border-left: 1px solid #ebebeb; }
+
+.owl-carousel.owl-drag .owl-item:last-child .product-box.product-grid-item {
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb; }
+
+@media screen and (min-width: 992px) {
+  #myModal .modal-dialog {
+    min-width: 1100px; }
+  button.count {
+    margin-right: 20px; }
+  .view_full_size {
+    position: relative;
+    height: 365px;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    background: #fff;
+    border: #ebebeb 1px solid; }
+    .view_full_size .img-product {
+      height: 100%; }
+  #thumblist_quickview .owl-item a {
+    margin: 5px; }
+  #thumblist_quickview .owl-item img {
+    object-fit: cover !important;
+    vertical-align: middle;
+    height: auto;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: 100%; } }
+
+img {
+  object-fit: cover; }
 
 /* Element */
 .content__job__title {
